@@ -1,0 +1,58 @@
+<h1>Welcome {{user}}</h1>
+
+<a style="text-decoration: none;background-color:rgba(0, 0, 0, 0.134) ;" routerLink="/transaction">View Transaction History</a>
+
+<div class="cintainer row mb-5 p-5>"
+ class="text-center container col-lg-6 col-md-12">
+
+<div class="container w-50 rounded  text-center p-4 mt-4 border-white" style="background-color: rgba(0, 0, 0, 0.296);">
+    <h1 class="text-white">Deposit </h1>
+    <form action="">
+        <div class="p-3 mt-2">
+<input [(ngModel)]="acno"  id="acid1" name="acnum1" class="form control" type="text"  placeholder="enter Account num">
+</div>
+
+<div class="p-3 mt-2">
+    <input [(ngModel)]="psw" id="psw1" name="paswrd1" class="form control" type="password"  placeholder="enter password">
+    </div>
+
+<div class="p-3 mt-3">
+    <input [(ngModel)]="amnt" id="amouid1" name="amnt1" class="form control" type="text"    placeholder="enter amount">
+
+</div>
+<div class="p-3 mt-3">
+    <button type="button" (click)="deposit()" class="btn btn-outline-primary">Deposit</button>
+
+</div>
+    </form>
+
+</div>
+</div>
+
+
+
+ 
+<div class="text-center container col-lg-6 col-md-12">
+<div class="container w-50 rounded  text-center p-5 mt-2 border-white" style="background-color: rgba(0, 0, 0, 0.296);">
+    <h1 class="text-white">Withdraw</h1>
+    <form action="">
+        <div class="p-3 mt-2">
+<input [(ngModel)]="acno1"  id="acid2" name="acnum2" class="form control" type="text"  placeholder="enter Account num">
+</div>
+
+<div class="p-3 mt-2">
+    <input [(ngModel)]="psw1"  id="psw2" name="paswrd2" class="form control" type="password"  placeholder="enter password">
+    </div>
+
+<div class="p-3 mt-3">
+    <input [(ngModel)]="amnt1"  id="amouid2" name="amnt2" class="form control" type="text"    placeholder="enter amount">
+
+</div>
+<div class="p-3 mt-3">
+    <button type="button" (click)="withdraw()" class="btn btn-outline-primary">Withdraw</button>
+
+</div>
+    </form>
+
+</div>
+</div>
